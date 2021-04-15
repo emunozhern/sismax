@@ -1,0 +1,353 @@
+:root {
+  --text-black: #3a3a3c;
+}
+* {
+  outline: none;
+}
+body {
+  color: #c6c6c6;
+}
+@font-face {
+  font-family: bahnschrift;
+  src: url("./fonts/bahnschrift_0.ttf");
+}
+@font-face {
+  font-family: hurme;
+  src: url("./fonts/HurmeGeometricSans4.otf");
+}
+@font-face {
+  font-family: radicalis;
+  src: url("./fonts/Radicalis.ttf");
+}
+header {
+  background-image: url(./images/main-header-right-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  position: relative;
+}
+header::before {
+  opacity: 0.2;
+  background-color: #29abe2;
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.main-header {
+  background-image: url(./images/main-header-left-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -283px;
+  position: relative;
+  z-index: 1;
+  margin-left: -15px;
+}
+.main-header-logo {
+  max-width: 158.5px;
+  max-height: 44px;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 146.5px;
+  margin-left: auto;
+  margin-right: 45%;
+  position: relative;
+  z-index: 3;
+}
+.img-fluid {
+  height: 100%;
+  width: 100%;
+}
+.navbar {
+  padding: 23.5px 0;
+  border-bottom: 2px solid #eff4f6;
+}
+/* @media (min-width: 992px) { */
+.navbar {
+  margin-left: 20px;
+}
+/* } */
+.navbar a.nav-link {
+  font-family: bahnschrift;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: var(--text-black);
+  font-weight: bold;
+  margin: auto 37.5px;
+}
+.navbar .nav-item {
+  position: relative;
+  white-space: nowrap;
+}
+.navbar li.down-icon::after {
+  content: "";
+  background-image: url("./images/arrow.svg");
+  display: inline-block;
+  width: 9px;
+  height: 6.5px;
+  position: absolute;
+  top: calc(50% - 6px);
+  right: 24.5px;
+}
+/* .navbar li:last-child a {
+  margin-right: 0;
+} */
+.navbar li:first-child a {
+  margin-left: 0;
+}
+
+.navbar-expand-lg .navbar-toggler {
+  display: block;
+  margin-right: 20px;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    margin-left: -60px;
+  }
+  .navbar a.nav-link {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+    margin: auto 17.5px;
+  }
+  .navbar li.down-icon::after {
+    right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1400px) {
+  .navbar {
+    margin-left: 108px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    margin-left: -50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .js-site-nav {
+    display: none;
+  }
+  .navbar-toggler {
+    margin-right: 0 !important;
+  }
+  .navbar {
+    justify-content: center;
+    padding-top: 58px;
+  }
+}
+.main-header-left {
+  /* background-color: #01579c; */
+  position: relative;
+  /* padding-top: 33px; */
+  padding-top: 71px;
+  padding-bottom: 104px;
+}
+/* .main-header-left::before {
+  content: "";
+  background-image: url(./images/main-header-left-bg.svg);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -166px;
+  top: 0;
+} */
+
+/* .main-header-left:after {
+  content: "";
+  background: #01579c;
+  background: linear-gradient(
+    176deg,
+    rgb(1 87 155) 0%,
+    rgb(0 114 182) 80%,
+    rgb(1 108 176) 90%
+  );
+  width: 378px;
+  height: 100%;
+  right: -177px;
+  top: 0;
+  position: absolute;
+  transform: skew(28deg);
+  z-index: 2;
+} */
+.main-header-right {
+  /* background-color: #e8f1f4; */
+}
+.no-gutters {
+}
+.js-site-nav {
+  justify-content: flex-start;
+}
+
+.main-header-text .text {
+  position: relative;
+  max-width: 362.5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 81px;
+  z-index: 5;
+}
+span.hola {
+  font-size: 5.577rem;
+  font-family: radicalis;
+  line-height: 1;
+  color: #00ffff;
+  position: relative;
+  display: block;
+  margin-left: -12px;
+  margin-bottom: -5px;
+  z-index: 1;
+}
+span.midtext {
+  display: block;
+  color: #fff;
+  font-family: bahnschrift;
+  font-weight: bold;
+  font-size: 4.279rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+span.final-text {
+  display: block;
+  color: #fff;
+  font-size: 2.159rem;
+  line-height: 1;
+  font-family: hurme;
+}
+
+.btn-header {
+  padding: 21.5px;
+  border: 2px solid #00ffff;
+  border-radius: 0;
+  color: #fff;
+  font-family: bahnschrift;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.our {
+  padding: 24px 0;
+  background-image: url(./images/Recurso\ 2.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: relative;
+  z-index: 1;
+}
+.our .heading {
+  text-align: center;
+}
+.our .description {
+  text-align: center;
+  padding: 0 100px;
+  font-size: 1rem;
+}
+.heading .top-heading {
+  font-size: 41px;
+  font-family: radicalis;
+  color: #c6c6c6;
+}
+.heading h2 {
+  line-height: 0.9;
+  font-size: 53px;
+  font-family: bahnschrift;
+  color: #3a3a3c;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* utils */
+.break {
+  margin-top: 63px;
+  padding-top: 32px;
+  border-top: 2px solid #e9e9e9;
+}
+
+/* .triangule {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #f0ad4e;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+} */
+.shapes {
+  margin-top: 33px;
+  margin-left: 73px;
+  display: flex;
+}
+.triangule {
+  width: 0px;
+  height: 0px;
+  border-style: inset;
+  border-width: 0 100px 173.2px 100px;
+  border-color: transparent transparent #f2f2f2 transparent;
+  transform: rotate(360deg);
+}
+
+.triangule span {
+  text-align: center;
+  top: 100px;
+  left: -67px;
+  position: relative;
+  width: 135px;
+  height: 93px;
+  margin: 0px;
+  color: #373a36;
+  font-family: bahnschrift;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.triangule-2 {
+  width: 0px;
+  height: 0px;
+  border-style: inset;
+  border-width: 0 100px 173.2px 100px;
+  border-color: transparent transparent #f2f2f2 transparent;
+  transform: rotate(180deg);
+  display: block;
+}
+.triangule-2 span {
+  text-align: center;
+  left: -67px;
+  top: 50px;
+  position: relative;
+  width: 130px;
+  height: 93px;
+  margin: 0px;
+  transform: rotate(180deg);
+  display: block;
+  color: #373a36;
+  font-family: bahnschrift;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.t-blue {
+  border-color: transparent transparent #016ba2 transparent;
+}
+.t-dark {
+  border-color: transparent transparent #3a3a3c transparent;
+}
+.t-dark span,
+.t-blue span {
+  color: #fff;
+}
+.next {
+  margin-left: -75px;
+}
